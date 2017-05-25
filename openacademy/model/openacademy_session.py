@@ -51,3 +51,4 @@ class Session(models.Model):
        if self.instructor_id and self.instructor_id in self.attendee_ids:
           raise exceptions.ValidationError("A session's instructor can't be an attendee")                
  
+ 
